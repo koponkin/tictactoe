@@ -1,0 +1,8 @@
+.floatLeft{
+    float: left;
+}
+
+.userName{
+    padding-left: 5px;
+    font-weight: bold;
+}

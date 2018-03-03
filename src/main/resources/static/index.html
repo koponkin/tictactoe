@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/app.css">
+    <script src="javascript/jquery-3.3.1.min.js"></script>
+    <script src="javascript/application.js"></script>
+</head>
+<body>
+    <div>
+        <label class="floatLeft">Username:</label>
+        <label id="user_name" class="userName"></label>
+        <button onclick="logout()">Logout</button>
+    </div>
+    <button onclick="createGame()" name="Create">Create</button>
+    <table id="all_games" style="width:100%">
+        <thead>
+            <tr>
+                <th>Actions</th>
+                <th>Status</th>
+                <th>User 1</th>
+                <th>User 2</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <div id="game_block" hidden="hidden">
+        <label id="game_name"></label>
+        <table id="game" border="1">
+            <tbody>
+                <tr>
+                    <td id="cell00" height="20px" width="20px" onclick="onFieldClick(0,0)"></td>
+                    <td id="cell10" height="20px" width="20px" onclick="onFieldClick(1,0)"></td>
+                    <td id="cell20" height="20px" width="20px" onclick="onFieldClick(2,0)"></td>
+                </tr>
+                <tr>
+                    <td id="cell01" height="20px" width="20px" onclick="onFieldClick(0,1)"></td>
+                    <td id="cell11" height="20px" width="20px" onclick="onFieldClick(1,1)"></td>
+                    <td id="cell21" height="20px" width="20px" onclick="onFieldClick(2,1)"></td>
+                </tr>
+                <tr>
+                    <td id="cell02" height="20px" width="20px" onclick="onFieldClick(0,2)"></td>
+                    <td id="cell12" height="20px" width="20px" onclick="onFieldClick(1,2)"></td>
+                    <td id="cell22" height="20px" width="20px" onclick="onFieldClick(2,2)"></td>
+                </tr>
+            </tbody>
+        </table>
+        <label id="game_status"></label>
+    </div>
+</body>
+</html>
